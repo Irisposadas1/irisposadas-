@@ -1,0 +1,88 @@
+<! DOCTYPE html >
+< html  lang = " en " >
+
+< cabeza >
+    < meta  charset = " UTF-8 " >
+    < título > Alumnos inscritos </ título >
+    < link  rel = " stylesheet " href = " css / bootstrap.min.css " >
+    < estilo >
+        . contenedor {
+            ancho :  800 px ;
+        }
+    </ estilo >
+</ cabeza >
+
+< cuerpo >
+    < div  class = " contenedor " >
+        < h1 > Alumnos inscritos </ h1 >
+        < formulario >
+            <! - No de cuenta ->
+            < div  class = " form-group " >
+                < etiqueta  para = " no_cuenta " >
+                    No. de cuenta:
+                </ etiqueta >
+                < input  type = " text " id = " no_cuenta " name = " no_cuenta " class = " form-control "
+                    placeholder = " Escribe tu número de cuenta " >
+            </ div >
+
+            <! - Nombre ->
+            < div  class = " form-group " >
+                < etiqueta  para = " nombre " >
+                    Nombre:
+                </ etiqueta >
+                < input  type = " text " id = " nombre " name = " nombre " class = " form-control " placeholder = " Escribe tu nombre " >
+            </ div >
+
+            <! - Carreras ->
+            < div  class = " form-group " >
+                < etiqueta  para = " carrera " >
+                    Carreras:
+                </ etiqueta >
+                < select  class = " form-control " name = " carrera " id = " carrera " >
+                    < option  value = " Licenciatura en Informática Administrativa " >
+                        Licenciatura en Informática Administrativa
+                    </ opción >
+                    < option  value = " Ing. en Computación " >
+                        En g. en Computación
+                    </ opción >
+                    < option  value = " Contaduría " > Contaduría </ option >
+                    < option  value = " Psicología " > Psicología </ option >
+                </ seleccionar >
+            </ div >
+
+            <! - Promedio ->
+            < div  class = " form-group " >
+                < etiqueta  para = " promedio " >
+                    Promedio:
+                </ etiqueta >
+                < input  type = " number " id = " promedio " name = " promedio " class = " form-control "
+                    placeholder = " Escribe tu promedio " >
+            </ div >
+
+            <! - Botón guardar ->
+            < div  class = " form-group " >
+                < input  type = " submit " value = " Guardar " id = " btn_guardar "
+                class = " btn btn-primary " >
+            </ div >
+        </ formulario >
+        < div  class = " tarjeta " >
+            < div  class = " card-body " id = " salida " >
+                < table  id = " lista_alumnos " class = " table table-striped " >
+                    < thead >
+                        < tr >
+                            < th > Fotografía </ th >
+                            < th > No. Cuenta </ th >
+                            < th > Nombre </ th >
+                            < th > Carrera </ th >
+                            < th > Promedio </ th >
+                        </ tr >
+                    </ thead >
+                    < tbody > </ tbody >
+                </ tabla >
+            </ div >
+        </ div >
+    </ div >
+    < script  src = " js / p04_tabla_alumnos.js " > </ script >
+</ cuerpo >
+
+</ html >
